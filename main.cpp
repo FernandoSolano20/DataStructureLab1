@@ -2,11 +2,11 @@
 using namespace std;
 void higher() {
     int n1, n2, n3;
-    cout << "Entre el primer numero: ";
+    cout << "Entre el primer numero: \n";
     cin >> n1;
-    cout << "Entre el segundo numero: ";
+    cout << "Entre el segundo numero: \n";
     cin >> n2;
-    cout << "Entre el tercer numero: ";
+    cout << "Entre el tercer numero: \n";
     cin >> n3;
 
     if(n1 > n2) {
@@ -19,7 +19,7 @@ void higher() {
     }
     else {
         if (n2> n3) {
-            cout << "El numero mayor es: " << n1;
+            cout << "El numero mayor es: " << n2;
         }
         else {
             cout << "El numero mayor es: " << n3;
@@ -31,7 +31,7 @@ void avg() {
     int opc, num;
     float sum = 0, i = 0;
     do {
-        cout << "Digite un numero ";
+        cout << "Digite un numero \n";
         cin >> num;
         sum += num;
         i++;
@@ -45,7 +45,7 @@ void avg() {
 
 void factorial() {
     int num, fac = 1;
-    cout << "Digite un numero ";
+    cout << "Digite un numero \n";
     cin >> num;
     while (num != 0) {
         fac = fac * num;
@@ -56,7 +56,7 @@ void factorial() {
 
 void grade() {
     int grade;
-    cout << "Digite los puntos del estudainte";
+    cout << "Digite los puntos del estudainte \n";
     cin >> grade;
     cout << "La nota es " << (grade * 100) / 50;
 }
@@ -88,12 +88,11 @@ int potencial(int base, int exp) {
 
 void binary() {
     int bin, index = 0, result = 0;
-    cout << "Digite el numero binario";
+    cout << "Digite el numero binario \n";
     cin >> bin;
 
     while (bin > 0) {
         int mod = bin % 10;
-        cout << " " << potencial(2, index);
         result = result + (mod * potencial(2, index));
         bin = bin / 10;
         index++;
@@ -103,7 +102,7 @@ void binary() {
 
 void digits() {
     int num, index = 0;
-    cout << "Digite el numero";
+    cout << "Digite el numero \n";
     cin >> num;
 
     while (num > 0) {
@@ -116,14 +115,14 @@ void digits() {
 int main() {
     int opc;
     do {
-        cout << "Digite una opcion: ";
-        cout << "1- Sacar mayor de 3 numeros: ";
-        cout << "2- Promedio";
-        cout << "3- Factorial";
-        cout << "4- Nota estudiante";
-        cout << "5- Binario a decimal";
-        cout << "6- Numero de digitos de un entero";
-        cout << "7- Salir";
+        cout << "\nDigite una opcion: \n";
+        cout << "1- Sacar mayor de 3 numeros\n";
+        cout << "2- Promedio\n";
+        cout << "3- Factorial\n";
+        cout << "4- Nota estudiante\n";
+        cout << "5- Binario a decimal\n";
+        cout << "6- Numero de digitos de un entero\n";
+        cout << "7- Salir \n";
         cin >> opc;
         switch (opc) {
             case 1:
